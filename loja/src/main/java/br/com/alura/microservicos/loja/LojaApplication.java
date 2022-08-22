@@ -3,10 +3,12 @@ package br.com.alura.microservicos.loja;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
+@EnableFeignClients
 public class LojaApplication {
 	/**
 	 * Spring vai criar uma instancia de RestTemplate com a inteligencia necessaria para traduzir aquele "fornecedor" da url pelo endereco - que ele vai pegar no eureka
