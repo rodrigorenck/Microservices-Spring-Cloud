@@ -1,0 +1,7 @@
+## Config que diz para ele que ele nao precisa se registrar em um servidor Eureka (porque ele eh o servidor)
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+server:
+  port: 8761
