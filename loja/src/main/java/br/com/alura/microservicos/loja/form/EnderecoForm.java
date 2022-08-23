@@ -6,6 +6,15 @@ public class EnderecoForm {
     private int numero;
     private String estado;
 
+    @Override
+    public String toString() {
+        return "EnderecoForm{" +
+                "rua='" + rua + '\'' +
+                ", numero=" + numero +
+                ", estado='" + estado + '\'' +
+                '}';
+    }
+
     public String getRua() {
         return rua;
     }

@@ -14,11 +14,11 @@ public class LojaApplication {
 	 * Spring vai criar uma instancia de RestTemplate com a inteligencia necessaria para traduzir aquele "fornecedor" da url pelo endereco - que ele vai pegar no eureka
 	 * Agora eh o Spring quem vai gerenciar o meu RestTemplate (client)
 	 */
-	@Bean
-	@LoadBalanced
-	public RestTemplate getRestTemplate(){
-		return new RestTemplate();
-	}
+//	@Bean
+//	@LoadBalanced
+//	public RestTemplate getRestTemplate(){
+//		return new RestTemplate();
+//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(LojaApplication.class, args);

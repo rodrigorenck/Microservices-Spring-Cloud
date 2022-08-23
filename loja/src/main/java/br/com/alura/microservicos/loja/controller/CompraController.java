@@ -2,6 +2,7 @@ package br.com.alura.microservicos.loja.controller;
 
 
 import br.com.alura.microservicos.loja.form.CompraForm;
+import br.com.alura.microservicos.loja.model.Compra;
 import br.com.alura.microservicos.loja.service.CompraService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,8 +20,8 @@ public class CompraController {
     }
 
     @PostMapping
-    public void realizarCompra(@RequestBody CompraForm form){
-        compraService.realizaCompra(form);
+    public Compra realizarCompra(@RequestBody CompraForm form){
+        return compraService.realizaCompra(form);
     }
 
 }
